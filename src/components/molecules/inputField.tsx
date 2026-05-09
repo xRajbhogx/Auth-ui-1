@@ -52,6 +52,7 @@ const InputField = ({ title, placeHolder, icon }: InputProps) => {
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
           onChangeText={()=>{}}
+          secureTextEntry = {icon==='lock'? true: false}
         ></TextInput>
       </View>
     </View>

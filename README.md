@@ -1,56 +1,31 @@
-# Welcome to your Expo app 👋
+# 🔐 Auth Flow UI
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A clean, premium authentication experience built with React Native.
 
-## Get started
+## 🎥 App Preview
 
-1. Install dependencies
+<div align="center">
+  <video src="./assets/videos/app-screen-recording.mp4" controls width="280"></video>
+</div>
 
-   ```bash
-   npm install
-   ```
+> *If the video doesn't play in your markdown viewer, you can find the raw file at `assets/videos/app-screen-recording.mp4`.*
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 📱 Screens
 
-In the output, you'll find options to open the app in a
+1. **Sign In** — Clean layout with email/password inputs and social OAuth options.
+2. **Sign Up** — Seamless registration flow with secure password confirmation.
+3. **Forgot Password** — Beautiful method-selection screen (Email, 2FA, Google Authenticator) for password recovery.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🧠 Behind the Code
 
-## Get a fresh project
+I built this entire application UI from scratch, **completely by myself**. 
 
-When you're ready, run:
+- **Zero** AI code generation.
+- **Zero** inline autocomplete / AI suggestions. 
+- **Modular Architecture**: Instead of copying and pasting UI code across screens, I built highly reusable, self-contained components (`InputField`, `Button`, `Header`, etc.) to keep the codebase clean, DRY, and scalable.
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Every component, flexbox rule, custom shadow, and style token was crafted manually so I could deeply understand the layout system. I only consulted AI as a tool to debug specific compilation or terminal errors that had me completely stuck. The code, the structure, and the execution are 100% human-made.
