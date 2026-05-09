@@ -4,9 +4,10 @@ A clean, premium authentication experience built with React Native.
 
 ## 🎥 App Preview
 
-<div align="center">
-  <video src="./assets/videos/app-screen-recording.mp4" controls width="280"></video>
-</div>
+
+https://github.com/user-attachments/assets/e037a523-feab-4109-aef1-ed0203ad14c4
+
+
 
 > *If the video doesn't play in your markdown viewer, you can find the raw file at `assets/videos/app-screen-recording.mp4`.*
 
