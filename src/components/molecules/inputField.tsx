@@ -12,10 +12,10 @@ interface InputProps {
   title: string;
   placeHolder: string;
   icon: "mail" | "lock";
-  onChangeText: (text: string) => void
+  // onChangeText: (text: string) => void
 }
 
-const InputField = ({ title, placeHolder, icon, onChangeText }: InputProps) => {
+const InputField = ({ title, placeHolder, icon }: InputProps) => {
   const [isFocused, setIsFocused] = useState<boolean>(false);
 
   return (
@@ -51,7 +51,7 @@ const InputField = ({ title, placeHolder, icon, onChangeText }: InputProps) => {
           keyboardType={icon === "mail" ? "email-address" : "default"}
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
-          onChangeText={onChangeText}
+          onChangeText={()=>{}}
         ></TextInput>
       </View>
     </View>

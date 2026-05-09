@@ -1,23 +1,24 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native'
+import { Pressable, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import { COLORS } from '@/constants/colors';
 
 interface ButtonProp {
-    title: string
+    title: string;
+    handlePress: () => void;
 }
 
-const Button = ({title}: ButtonProp) => {
+const Button = ({title, handlePress}: ButtonProp) => {
   return (
     <View style={{ width: '100%', paddingHorizontal: 25, justifyContent: 'center',  }}>
-        <Pressable 
-            style = {styles.container}
-            onPress={()=>alert('Sign In successful !')}>
+        <TouchableOpacity 
+            style={styles.container}
+            onPress={handlePress}>
             <Text style = {{color: 'white', fontWeight: '600', fontSize: 16}}>
                 {title}
             </Text>
             <FontAwesome6 name="arrow-right-long" size={16} color="white" />
-        </Pressable>
+        </TouchableOpacity>
     </View>
   )
 }
